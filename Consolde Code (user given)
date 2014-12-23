@@ -1,0 +1,36 @@
+static void Main(string[] args)
+        {
+            Console.Write("First Number :");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Second Number :");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Operation Symbol :");
+            char symbol = Convert.ToChar(Console.ReadLine());
+            calculate(n1, n2, symbol);
+            Console.ReadKey();
+        }
+
+        static void calculate(double number1, double number2, char operation)
+        {
+
+            if (operation == '+')
+            {
+                Console.Write("outcome:"+ (number1 + number2));
+            }
+            else if (operation == '-')
+            {
+                Console.Write("outcome:" + (number1 - number2));
+            }
+            else if (operation == '*')
+            {
+                Console.Write("outcome:" + (number1 * number2));
+            }
+            else if (operation == '/')
+            {
+                Console.Write("outcome:" + (number1 / number2));
+            }
+            else
+            {
+                Console.Write("Wrong Operation Symbol !");
+            }
+        }
