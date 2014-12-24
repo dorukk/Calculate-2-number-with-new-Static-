@@ -1,0 +1,14 @@
+ static void Main(string[] args)
+        {
+           
+
+            double avarageincome = avarage(44, 63);
+            Console.Write("Avarage :" + avarageincome);
+            Console.ReadKey();
+        }
+
+        static double avarage(double nu1, double nu2)
+        {
+            double avarage = (nu1 + nu2) / 2;
+            return avarage;
+        }
